@@ -10,4 +10,11 @@ class UserController extends BaseController{
 		self::$message_url = 'http://api.message.com/v1/sendMessage.php';
 	}
 
+
+	public function sendMessage($apiUrl, $userId, $messageContent){
+
+		sender(1, 'php is the best program lang');
+
+	}
+
 }
