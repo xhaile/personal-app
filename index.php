@@ -13,7 +13,7 @@ class UserController extends BaseController{
 
 	public function sendMessage($apiUrl, $userId, $messageContent){
 
-		sender(1, 'php is the best program lang');
+		//sender(1, 'php is the best program lang');
 
 	}
 
