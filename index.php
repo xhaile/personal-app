@@ -33,4 +33,11 @@ class UserController extends BaseController{
 		});
 	}
 
+	public function checkLoginStatus()
+	{
+		if(Session::get('uid')) return true;
+		if($_COOKIE['uid']) return true;
+		return false;
+	}
+
 }
