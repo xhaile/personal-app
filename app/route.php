@@ -1,3 +1,7 @@
+<?php
+
+
+
 Route::group(array("domain"=>"apply.dev.baicheng.com"),function(){
 	Route::get("list", array("as"=>"user-list", "userContoller@list"));
 	Route::get("detail_{user_id}", array(
@@ -7,3 +11,6 @@ Route::group(array("domain"=>"apply.dev.baicheng.com"),function(){
 	));
 
 });
+
+
+Route::get('goods-list', array('use'=>'GoodsController@GoodsList', 'as'=>'goods-list'));
