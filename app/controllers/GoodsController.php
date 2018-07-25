@@ -10,6 +10,6 @@ class GoodsController extends BaseController
 	
 	public function __construct()
 	{
-		$this->goods_attribute = Session::get('goods_attribute');
+		$this->goods_attributes = Session::get('goods_attribute');
 	}
 }
