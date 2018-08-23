@@ -40,4 +40,10 @@ class UserController extends BaseController{
 		return false;
 	}
 
+
+	public function getEnv(){
+	
+		return $_SERVER;
+	}
+
 }
