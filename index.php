@@ -20,17 +20,7 @@ class UserController extends BaseController{
 
 	public function testAjax(){
 
-		$.ajax({
-
-
-			url:url,
-			data:{},
-			dataType:'json',
-			type:'post',
-			success:function(data){
-				console.log(data);
-			}
-		});
+		return Request::isAjax();
 	}
 
 	public function checkLoginStatus()
