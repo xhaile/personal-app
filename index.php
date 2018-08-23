@@ -46,4 +46,10 @@ class UserController extends BaseController{
 		return $_SERVER;
 	}
 
+	public function setCache($key){
+
+		return Cache::put($key);
+	}
+
+
 }
